@@ -10,7 +10,7 @@
 }
 
 - (UIColor *)selectedColor {
-	return [UIColor yellowColor];
+	return [UIColor purpleColor];
 }
 
 - (BOOL)isSelected {
