@@ -1,5 +1,7 @@
 include $(THEOS)/makefiles/common.mk
 
+ARCHS = arm64
+
 BUNDLE_NAME = EzVPN
 $(BUNDLE_NAME)_BUNDLE_EXTENSION = bundle
 $(BUNDLE_NAME)_CFLAGS +=  -fobjc-arc -I$(THEOS_PROJECT_DIR)/headers

@@ -1,6 +1,9 @@
 #import "EzVPNModule.h"
 
-@property(getter=isEnabled) BOOL enabled;
+@interface NEVPNManager ()
++(BOOL)isEnabled;
++(void)setEnabled:(BOOL)arg1;
+@end
 
 @interface UIImage ()
 + (UIImage *)imageNamed:(NSString *)name inBundle:(NSBundle *)bundle;
@@ -26,10 +29,10 @@
 
 - (void)setSelected:(BOOL)selected {
 	if ([NEVPNManager isEnabled]) {
-		[NEVPNManager isEnabled:FALSE];
+		[NEVPNManager setEnabled:FALSE];
 		selected = FALSE;
 	} else {
-		[NEVPNManager isEnabled:TRUE];
+		[NEVPNManager setEnabled:TRUE];
 		selected = TRUE;
 	}
 	self.ezvpn = selected;

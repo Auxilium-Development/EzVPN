@@ -3,6 +3,6 @@ Name: EzVPNModule
 Version: 0.0.1
 Architecture: iphoneos-arm
 Description: A toggle to turn VPN on or off from your control center.
-Author: Chilaxan and M4cs
+Author: Chilaxan, M4cs, Simalary (Chris Harper)
 Section: Control Center (Modules)
-Maintainer: Chilaxan and M4cs
+Maintainer: Chilaxan, M4cs, Simalary (Chris Harper)

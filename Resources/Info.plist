@@ -26,7 +26,7 @@
 		<integer>2</integer>
 	</array>
 	<key>NSPrincipalClass</key>
-	<string>EzLocationModule</string>
+	<string>EzVPNModule</string>
 	<key>ModuleSize</key>
 	<dict>
 		<key>columns</key>
