@@ -1,5 +1,7 @@
 #import "EzVPNModule.h"
 
+@property(getter=isEnabled) BOOL enabled;
+
 @interface UIImage ()
 + (UIImage *)imageNamed:(NSString *)name inBundle:(NSBundle *)bundle;
 @end
@@ -10,11 +12,11 @@
 }
 
 - (UIColor *)selectedColor {
-	return [UIColor purpleColor];
+	return [UIColor yellowColor];
 }
 
 - (BOOL)isSelected {
-	if ([NEVPNManager enabled]) {
+	if ([NEVPNManager isEnabled]) {
 		self.ezvpn = TRUE;
 	} else {
 		self.ezvpn = FALSE;
@@ -23,11 +25,11 @@
 }
 
 - (void)setSelected:(BOOL)selected {
-	if ([NEVPNManager enabled]) {
-		[NEVPNManager enabled:FALSE];
+	if ([NEVPNManager isEnabled]) {
+		[NEVPNManager isEnabled:FALSE];
 		selected = FALSE;
 	} else {
-		[NEVPNManager enabled:TRUE];
+		[NEVPNManager isEnabled:TRUE];
 		selected = TRUE;
 	}
 	self.ezvpn = selected;
