@@ -1,15 +1,10 @@
-#import "EzLocationModule.h"
-
-@interface CLLocationManager ()
-+ (BOOL)locationServicesEnabled;
-+ (void)setLocationServicesEnabled:(BOOL)arg1;
-@end
+#import "EzVPNModule.h"
 
 @interface UIImage ()
 + (UIImage *)imageNamed:(NSString *)name inBundle:(NSBundle *)bundle;
 @end
 
-@implementation EzLocationModule
+@implementation EzVPNModule
 - (UIImage *)iconGlyph {
 	return [UIImage imageNamed:@"Icon" inBundle:[NSBundle bundleForClass:[self class]]];
 }
@@ -20,11 +15,11 @@
 
 - (BOOL)isSelected {
 	if ([CLLocationManager locationServicesEnabled]) {
-		self.ezlocation = TRUE;
+		self.ezvpn = TRUE;
 	} else {
-		self.ezlocation = FALSE;
+		self.ezvpn = FALSE;
 	}
-	return self.ezlocation;
+	return self.ezvpn;
 }
 
 - (void)setSelected:(BOOL)selected {
@@ -35,7 +30,7 @@
 		[CLLocationManager setLocationServicesEnabled:TRUE];
 		selected = TRUE;
 	}
-	self.ezlocation = selected;
+	self.ezvpn = selected;
 	[super refreshState];
 }
 @end
