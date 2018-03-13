@@ -10,11 +10,11 @@
 }
 
 - (UIColor *)selectedColor {
-	return [UIColor purpleColor];
+	return [UIColor yellowColor];
 }
 
 - (BOOL)isSelected {
-	if ([CLLocationManager locationServicesEnabled]) {
+	if ([NEVPNManager enabled]) {
 		self.ezvpn = TRUE;
 	} else {
 		self.ezvpn = FALSE;
@@ -23,11 +23,11 @@
 }
 
 - (void)setSelected:(BOOL)selected {
-	if ([CLLocationManager locationServicesEnabled]) {
-		[CLLocationManager setLocationServicesEnabled:FALSE];
+	if ([NEVPNManager enabled]) {
+		[NEVPNManager enabled:FALSE];
 		selected = FALSE;
 	} else {
-		[CLLocationManager setLocationServicesEnabled:TRUE];
+		[NEVPNManager enabled:TRUE];
 		selected = TRUE;
 	}
 	self.ezvpn = selected;

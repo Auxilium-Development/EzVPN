@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleName</key>
-	<string>EzLocation</string>
+	<string>EzVPN</string>
 	<key>CFBundleExecutable</key>
-	<string>EzLocation</string>
+	<string>EzVPN</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.ezccmodules.control-center.ezlocationmodule</string>
+	<string>com.ezccmodules.control-center.ezvpnmodule</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -30,9 +30,9 @@
 	<key>ModuleSize</key>
 	<dict>
 		<key>columns</key>
-		<string>4</string>
+		<string>1</string>
 		<key>rows</key>
-		<string>2</string>
+		<string>1</string>
 	</dict>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
