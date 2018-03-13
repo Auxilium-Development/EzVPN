@@ -1,8 +1,8 @@
-Package: com.ezccmodules.control-center.ezlocationmodule
-Name: EzLocationModule
+Package: com.ezccmodules.control-center.ezvpnmodule
+Name: EzVPNModule
 Version: 0.0.1
 Architecture: iphoneos-arm
-Description: A toggle to turn Location Services on or off from your control center.
+Description: A toggle to turn VPN on or off from your control center.
 Author: Chilaxan and M4cs
 Section: Control Center (Modules)
 Maintainer: Chilaxan and M4cs
